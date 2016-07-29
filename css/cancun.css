@@ -13,22 +13,37 @@ body{
     background: url('../img/cancun/bg.jpg') repeat top left;
 }
 h1{
-    font-size: 160px;
-    font-family: 'Beach Resort',sans-serif;
-    z-index: 100;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    z-index: 600;
     color: #fff;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
     top: 0;
+    bottom: 0;
+    font-style: italic;
     margin: auto;
     display: block;
     height: 516px;
-    width: 350px;
+    width: 600px;
 }
 h1 img{
     width: 350px;
+    margin-bottom: 45px;
+}
+/*estilos generales*/
+.title{
+    font-family: 'Beach Resort',sans-serif;
+    z-index: 600;
+    color: #fff;
+    position: absolute;
+    line-height: 90px;
+    margin: auto;
+    display: block;
+    height: 132px;
+    width: 720px;
 }
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0
@@ -43,18 +58,330 @@ h1 img{
   * z-index ordering of the different layers, do this for your layers,
   * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
   */
-.horizon{
+.desktop .horizon{
     z-index: 1;
-    width: 3000px;
+    width: 6000px;
     top: -300px;
     opacity: 0;
     display: none;
 }
-.middle{
-    z-index: 500;
-    width: 4000px;
-}
-.front{
+.desktop .horizon img{
     z-index: 1000;
-    width: 6000px;
+    width: 11000px;
+}
+.desktop .middle{
+    z-index: 500;
+    width: 10650px;
+}
+.desktop .middle img{
+    width: 12888px;
+}
+.desktop .front{
+    z-index: 1000;
+    width: 18000px;
+}
+.desktop .front img{
+    width: 15200px;
+}
+.desktop .subtitulo{
+    font-size: 100px;
+    z-index: 600;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 380px;
+    margin: auto;
+    display: block;
+    height: 132px;
+    width: 720px;
+}
+.royalton{
+    font-size: 150px;
+    left: 2405px;
+    top: 170px;
+}
+.joya{
+    font-size: 200px;
+    left: 5000px;
+    top: 100px;
+}
+.joyaImg{
+    position: absolute;
+    font-size: 200px;
+    left: 4855px;
+    top: 55px;
+    width: 411px !important;
+    z-index: 600;
+}
+audio{
+    z-index: 600;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.soc{
+    position: absolute;
+    z-index: 600;
+    left: 50px;
+    top: -80px;
+    width: 200px !important;
+    margin: auto;
+    display: block;
+}
+.miercoles{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 600;
+    left: 3250px;
+    top: 0px;
+    font-size: 23px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+table tr .dia{
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+table tr td{
+    padding: 5px;
+    font-size: 23px;
+
+}
+table tr td span{
+    padding-right: 40px;
+}
+.joya-contenedor{
+    position: absolute;
+    left: 5400px;
+    width: 600px;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 34px;
+    font-weight: 100;
+    border: solid 1px #fff;
+
+}
+.joya-contenedor .joya-text{
+    font-size: 20px;
+    bottom: 0;
+    color: #fff;
+}
+.joya-contenedor a{
+    font-size: 20px;
+    bottom: 0;
+    color: #fff;
+    color: #1dafec;
+    text-decoration: none;
+}
+.desayuno{
+    display: flex;
+    flex: warp;
+    position: absolute;
+    left: 8700px;
+    background: rgba(0, 0, 0, 0.2);
+    top: 25px;
+    color: #fff;
+    z-index: 600;
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+.playa{
+    top: 225px;
+    position: absolute;
+    color: #fff;
+    font-size: 150px;
+    font-family: 'Beach Resort',sans-serif;
+    left: 7250px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-90deg);
+}
+.carrera{
+    top: 25px;
+    position: absolute;
+    color: #fff;
+    font-size: 162px;
+    font-family: 'Beach Resort',sans-serif;
+    left: 9300px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-90deg);
+}
+.paquete_convencion{
+    top: 200px;
+    position: absolute;
+    color: #fff;
+    font-size: 162px;
+    font-family: 'Beach Resort',sans-serif;
+    left: 11300px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-90deg);
+    line-height: 105px;
+}
+.desayuno .table{
+    padding-top: 80px;
+}
+
+.desktop .run{
+    z-index: 1000;
+    width: 16000px;
+    right: 0;
+    top: 0;
+}
+.desktop .run img{
+    width: 14985px;
+}
+.viernes{
+    display: flex;
+    flex: warp;
+    position: absolute;
+    left: 10800px;
+    background: rgba(0, 0, 0, 0.2);
+    top: 135px;
+    color: #fff;
+    z-index: 600;
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+.contacto{
+    position: absolute;
+    left: 14500px;
+    top: 100px;
+    color: #fff;
+    padding: 40px;
+}
+.contacto .miembros{
+    display: flex;
+    flex: wrap;
+    justify-content: space around;
+    position: relative;
+
+}
+.contacto .miembros div{
+    width: 225px;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 120px;
+
+}
+.contacto_text{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Beach Resort',sans-serif;
+}
+.content.bgcolor-1{
+    width: 900px;
+}
+.content.bgcolor-1 h2{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 60px 0 20px;
+}
+.wey{
+    padding-bottom: 12px;
+    width: 70px !important;
+}
+.name{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 13px;
+}
+.miembros a{
+    text-decoration: none;
+    color: #fff;
+}
+.input__label {
+    color: #2D343E;
+    font-size: 16px;
+    opacity: .7;
+    top: 0;
+}
+.graphic--nao {
+    stroke: #1A588A;
+}
+center{
+    background: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    margin-top: 16px;
+    padding-bottom: 20px;
+}
+.send{
+    width: 355px;
+    padding: 10px;
+    border: none;
+    background: rgba(26, 88, 138, .8);
+    margin-top: 56px;
+    color: #fff;
+}
+.input__field--nao {
+    color: #1A588A;
+}
+.input--filled .input__label--nao {
+    color: #1A588A !important;
+}
+.costos{
+    position: absolute;
+    top: 20px;
+    left: 13590px;
+    width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.2);
+}
+.costos .tables{
+    display: flex;
+    width: 100%;
+}
+.costos .tables div{
+    width: 50%;
+    color: #fff;
+}
+.costos .tables div .paquetes{
+    width: 150px;
+}
+.costos .texto_costo{
+    padding: 50px 20px 0;
+    color: #fff;
+    text-align: center;
+}
+.precios{ 
+    margin: 40px auto 0;
+    color: #fff;
+}
+.precios tr td{ 
+    margin: 40px auto 0;
+}
+.promo{
+    font-size: 22px;
+    font-style: italic;
+}
+@media (max-width: 1370px){
+    .royalton {
+        top: 260px;
+        left: 2650px;
+    }
+    .desktop .front img {
+        width: 11000px;
+    }
+    .desktop .middle img {
+        width: 11000px;
+    }
+    .desktop .horizon img {
+        width: 10000px;
+    }
+    .desktop .run img {
+        width: 12700px;
+    }
 }
